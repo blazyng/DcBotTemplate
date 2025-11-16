@@ -1,0 +1,101 @@
+# ===================================================================
+# CONFIGURATION TEMPLATE
+#
+# Copy this file to 'config.py', fill in all values, and
+# add 'config.py' to your .gitignore.
+#
+# DO NOT COMMIT 'config.py'
+# ===================================================================
+
+# --- Core IDs ---
+# The ID of your Discord Server (Guild)
+# (Right-click server icon > Copy ID)
+GUILD_ID = 123456789012345678
+
+# The channel where the bot posts greetings, reminders, etc.
+# (Right-click channel > Copy ID)
+MAIN_CHANNEL_ID = 123456789012345678
+
+# The exact name of the role allowed to use /playsound
+SOUND_ROLE_NAME = "leleks"
+
+
+# --- Steam Monitoring ---
+# Maps Discord User IDs (as int) to their Steam64 IDs (as int)
+STEAM_IDS = {
+    241674413710376960: 76561198037094341,    # example-user-1
+    241675623007911936: 76561198083398273,    # example-user-2
+    # Add all your users here
+}
+
+
+# --- Custom Replies ---
+
+# For the on_presence_update event.
+# Key: The exact game name (case-sensitive)
+# Value: The reply string
+PRESENCE_JOKES = {
+    "Notepad++": "Don't edit too much, UwU",
+    "Fortnite": "Haha Fortiniti"
+}
+
+# For the Steam Monitor (monitor_single_steam_user).
+# Key: The exact game name from Steam
+# Value: The reply string
+GAME_STEAM_REPLIES = {
+    "RoboSquare": "Have fun in RoboSquare",
+    "Halo Infinite": "Time for some Halo",
+    "EA SPORTS™ FIFA 26": "Fifa xD",
+    "Rocket League": "Goaaaal",
+    "Counter-Strike 2": "5000 rating incoming",
+    "Call of Duty®: Modern Warfare® II | Warzone™ 2.0": "Good luck not getting downed immediately",
+    "Escape Simulator": "Have fun! This room is easy."
+}
+
+
+# --- GIF Lists ---
+
+# Used for voice channel greetings (on_voice_state_update)
+GREETING_MORNING_GIFS = [
+    "https://giphy.com/gifs/slIPoGd7s380k7nsSg",
+    "https://giphy.com/gifs/wcknFErCJJ1PngwAuc"
+]
+
+GREETING_DAY_GIFS = [
+    "https://giphy.com/gifs/3MeaTmevvqfapAffCK",
+    "https://giphy.com/gifs/a1mnuwIEQe4WvLulFH"
+]
+
+# Used for voice channel farewells (on_voice_state_update)
+FAREWELL_NIGHT_GIFS = [
+    "https://giphy.com/gifs/oJaNJooQWImLLK5N62",
+    "https://giphy.com/gifs/m2OIDMAPpe9I1jQBev"
+]
+
+FAREWELL_DAY_GIFS = [
+    "https://giphy.com/gifs/Cs9lgDqpjSzIuq1Z2n",
+    "https://giphy.com/gifs/TZoXBPzopMPMX2NTW1"
+]
+
+# (Optional) Game-specific GIFs for the Steam Monitor
+# Referenced by the monitor_single_steam_user function in main.py
+COUNTER_STRIKE_GIFS = [
+    "https://giphy.com/gifs/fhBEcpH6oB49Ij1mIk",
+    "https://giphy.com/gifs/S3YGPmvk65LnsNsJXp"
+]
+FIFA_GIFS = [
+    "https://giphy.com/gifs/gCUuhFA5tuK5EDqPpm",
+    "https://giphy.com/gifs/cbsUh7D1RusXcdq0qI"
+]
+HALO_GIFS = [
+    "https://giphy.com/gifs/NRmV2hNuJdYUjeWEtO",
+    "https://giphy.com/gifs/thsUcvQgbPsCdDHiye"
+]
+LEAGUE_OF_LEGENDS_GIFS = [
+    "https://giphy.com/gifs/fOHvUCAC9miVFzhuOK",
+    "https://giphy.com/gifs/javNu5QvilMphjDbKn"
+]
+ROCKET_LEAGUE_GIFS = [
+    "https://giphy.com/gifs/ZrtX98nXtqzxPNA8Mf",
+    "https://giphy.com/gifs/sseOYNIVMxr9ntxLws"
+]

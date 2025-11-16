@@ -57,7 +57,7 @@ This project started as a private, hard-coded bot for a personal server and has 
 
 ```bash
 python main.py
-
+```
 
 #### With Docker (Recommended)
 
